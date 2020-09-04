@@ -25,9 +25,9 @@ ENTRYPOINT [ "/bin/hugo" ]
 CMD [ "help" ]
 EXPOSE 1313
 
-RUN wget https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_extended_0.59.1_Linux-64bit.tar.gz && \
-tar zxvpf hugo_extended_0.59.1_Linux-64bit.tar.gz && \
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_extended_0.74.3_Linux-64bit.tar.gz && \
+tar zxvpf hugo_extended_0.74.3_Linux-64bit.tar.gz && \
 mv hugo /bin/hugo && \
-rm hugo_extended_0.59.1_Linux-64bit.tar.gz README.md LICENSE
+rm hugo_extended_0.74.3_Linux-64bit.tar.gz README.md LICENSE
 
 USER docker
